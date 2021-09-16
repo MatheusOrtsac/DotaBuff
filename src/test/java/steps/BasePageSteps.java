@@ -25,7 +25,6 @@ public class BasePageSteps {
 
     BasePage basePage = new BasePage();
     private List<NamesHerois> listDeHerois = new ArrayList<>();
-    private List<NomesItens> listDeItens = new ArrayList<>();
 
     @Dado("logar no site com sucesso")
     public void fazerLoginComSucesso() {
@@ -60,19 +59,3 @@ public class BasePageSteps {
 
     }
 }
-
-
-
-//    WebDriver driver = new ChromeDriver();
-//        for (Map<String, String> map : dataTable.asMaps()) {
-//        NomesItens nomesItens = new NomesItens(map.get("herois"));
-////            listDeItens.add(nomesItens);
-//        //      }
-//        driver.get("https://pt.dotabuff.com/heroes/" + "herois");
-//        WebElement dota2 = driver.findElement(By.className("container-outer"));
-//
-//        try {
-//        File screenshot = dota2.getScreenshotAs(OutputType.FILE);
-//        FileUtils.copyFile(screenshot, new File("c:/images/teste1.jpg"));
-//        } catch (Exception e) {
-//        System.out.println("deu ruim" + e);

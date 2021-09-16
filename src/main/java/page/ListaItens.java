@@ -26,14 +26,6 @@ public class ListaItens {
     public byte[] tirarPrintItens() {
         PageHelper.waitUntilVisibility(txtItens, "txtItens");
         try {
-//            for (WebElement item: itenslist ) {
-//                int contador = 0;
-//                File screenshot = item.getScreenshotAs(OutputType.FILE);
-//                FileUtils.copyFile(screenshot, new File("c:/images/teste_item" + contador + ".jpeg"));
-//                contador++;
-//                if(contador == 2){
-//                    break;
-//                }
             File screenshot = tabelaToda.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File("c:/images/teste_item_tabelaToda.jpeg"));
             return tabelaToda.getScreenshotAs(OutputType.BYTES);

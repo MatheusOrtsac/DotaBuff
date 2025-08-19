@@ -23,8 +23,9 @@ public class DriveFactory {
         return driver;
     }
     public void quitDrive(){
-        if (driver!= null);
+        if (driver != null) {
         driver.quit();
     }
-}
+ }
 
+}

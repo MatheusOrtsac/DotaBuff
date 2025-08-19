@@ -1,7 +1,7 @@
 #language: pt
 @basePage
 
-Funcionalidade: Teste pagina login
+Funcionalidade: Jogar Com Heroi que eu goste
 
   Cenário: Realizar primeiros itens mais escolhidos
   Dado logar no site com sucesso

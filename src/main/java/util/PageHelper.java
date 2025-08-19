@@ -30,7 +30,7 @@ public class PageHelper {
             getFluentWait().until(ExpectedConditions.visibilityOf(element));
             return element;
         }catch(Exception e){
-            throw new ElementNotVisibleException("Error, Não foi possivel executar Motivo:" + descricao + e.getMessage());
+            throw new ElementNotInteractableException("Error, Não foi possivel executar Motivo:" + descricao + e.getMessage());
         }
     }
 
@@ -40,8 +40,8 @@ public class PageHelper {
                 .pollingEvery(Duration.ofSeconds(1))
                 .ignoring(ElementClickInterceptedException.class)
                 .ignoring(ElementNotInteractableException.class)
-                .ignoring(ElementNotSelectableException.class)
-                .ignoring(ElementNotVisibleException.class);
+                .ignoring(ElementNotInteractableException.class)
+                .ignoring(ElementNotInteractableException.class);
     }
 }
 

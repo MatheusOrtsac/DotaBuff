@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>Treinamento_AUDITESTE</artifactId>
+  <artifactId>Matheus_Projeto</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Treinamento_AUDITESTE</name>
+  <name>Matheus_Projeto</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -50,6 +50,16 @@
       <artifactId>maven-shared-utils</artifactId>
       <version>3.1.0</version>
     </dependency>
+      <dependency>
+          <groupId>io.github.bonigarcia</groupId>
+          <artifactId>webdrivermanager</artifactId>
+          <version>6.2.0</version>
+      </dependency>
+      <dependency>
+          <groupId>org.seleniumhq.selenium</groupId>
+          <artifactId>selenium-java</artifactId>
+          <version>4.10.0</version> <!-- Verifique sempre se é a versão mais recente -->
+      </dependency>
   </dependencies>
 
   <build>

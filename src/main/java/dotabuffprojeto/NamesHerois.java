@@ -7,7 +7,6 @@ public class NamesHerois {
          setNome(allHerois);
      }
 
-
      public String getNome() {
         return nome;
     }

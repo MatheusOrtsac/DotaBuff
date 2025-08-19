@@ -28,13 +28,12 @@ public class BasePageSteps {
 
     @Dado("logar no site com sucesso")
     public void fazerLoginComSucesso() {
-        Assert.assertEquals("Heróis - Todos os heróis - DOTABUFF - Dota 2 Stats", DriveFactory.getInstance().getDriver().getTitle());
+        Assert.assertEquals("Estatísticas de facetas de heróis - DOTABUFF - Dota 2 Stats", DriveFactory.getInstance().getDriver().getTitle());
     }
 
     @Dado("acesssar selecao de herois")
     public void acesssarSelecaoDeHerois() {
         basePage.inputBtheroi.click();
-        basePage.inputBtallheroi.click();
         Assert.assertEquals("https://pt.dotabuff.com/heroes", DriveFactory.getInstance().getDriver().getCurrentUrl());
     }
 

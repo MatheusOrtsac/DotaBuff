@@ -12,7 +12,7 @@ import javax.naming.Name;
 import java.util.List;
 
 public class ListaHerois {
-    @FindBy(xpath = "//h1[contains(.,'HeróisTodos os heróis')]")
+    @FindBy(xpath = "//div [@class = 'tw-space-y-2 tw-p-1']")
     public WebElement txtHerois;
     @FindBy(className = "name")
     public List<WebElement> namelist;
